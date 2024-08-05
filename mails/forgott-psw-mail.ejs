@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Recovery Email</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .header img {
+            width: 100px;
+        }
+        .content {
+            text-align: left;
+            font-weight: 600;
+            color: #777;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container " >
+        <!-- <div class="header">
+            <img src="https://i.ibb.co/6wZR4GR/Screenshot-2024-06-23-183508.png" style="width: 100%; " alt="GoGather Logo">
+        </div> -->
+        <div class="content" >
+            <h2 style="color: black;">Hello <%=name %> This is Password Recovery Email !!</h2>
+
+        <p>To Change Your Password , please use the following activation code:</p>
+
+        <p style="font-size: 30px; font-weight: bold; color: #00a0a0; text-align: center; "> <%= otp %> </p>
+
+        <p>Copy and paste this code in the Forgott section on our website.</p>
+
+        <p>Thank You </p>
+        </div>
+        <div class="footer">
+            <p>&copy; <%= new Date().getFullYear() %> GoGather. All rights reserved.</p>
+            <p>1234 Street Name, City, State, 56789</p>
+            <p><a href="#">Unsubscribe</a></p>
+        </div>
+    </div>
+</body>
+</html>
